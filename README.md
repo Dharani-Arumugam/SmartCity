@@ -1,6 +1,8 @@
 SmartCity project  simulates data from IoT device and produce those data into Kafka. The data from Kafka are processed through Spark and stored into Amazon S3 as parquet files
 
-~
+
+#### docker command to run smartcity.py
+~~~
 
  docker exec -it spark-master /opt/spark/bin/spark-submit \
 --master spark://spark-master:7077 \
@@ -8,3 +10,4 @@ SmartCity project  simulates data from IoT device and produce those data into Ka
 --conf spark.jars.ivy=/tmp/.ivy2 /opt/spark/jobs/smart_city.py
 
 
+~~~
