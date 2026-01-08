@@ -1,4 +1,5 @@
-SmartCity project  simulates data from IoT device and produce those data into Kafka. The data from Kafka are processed through Spark and stored into Amazon S3 as parquet files
+SmartCity project  simulates data from IoT device and produce those data into Kafka. The data from Kafka are processed through Spark and stored into Amazon S3 as parquet files.
+Using Amazon Glue Crawler, data from S3 is being read and schema is created. Then used Amazon Athena to run the query to fetch the results.
 #### Docker Start
 ~~~
 docker compose up -d
