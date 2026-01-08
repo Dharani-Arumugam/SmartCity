@@ -3,12 +3,12 @@ SmartCity project  simulates data from IoT device and produce those data into Ka
 ~~~
 docker compose up -d
 ~~~
-#### Python run
+#### KafkaProducer
 ~~~
 python jobs/main.py
 ~~~
 
-#### Docker
+#### Spark Process using Docker
 ~~~
 
  docker exec -it spark-master /opt/spark/bin/spark-submit \
